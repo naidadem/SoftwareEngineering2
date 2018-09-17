@@ -1,0 +1,41 @@
+{
+  "Robot":
+  {
+    "robotId": "",
+  	"robotcellId": "",
+  	"productName": "",
+  	"startTime": -1,
+  	"currentTime": -1,
+  	"running": false,
+  	"produced": -1,
+  	"target": -1,
+  	"cycleTime": -1,
+  	"station": -1,
+  	"error": false,
+  	"eventCode": -1,
+  	"inputPallet": -1,
+  	"outputPallet": -1,
+  	"speed": -1,
+  	"log": ""
+  },
+  "User":
+  {
+    "companyId":-1,
+    "permissionLevel":-1,
+    "username":"",
+    "password":""
+  },
+  "PushNotification":
+  {
+    "robotId":"",
+    "message":"",
+    "type":-1
+  },
+  "Error":
+  {
+    "id":-1,
+    "robotId":"",
+    "message":"",
+    "solved":false
+  }
+}

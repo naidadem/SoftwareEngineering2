@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+
+        <TextView
+            android:id="@+id/RobotID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:text="122"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/ErrorMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="fail"
+            android:textColor="#5d5d5d"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TimeStamp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/colorAccent" />
+
+
+
+
+</LinearLayout>

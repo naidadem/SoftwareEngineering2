@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/RobotIDText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/RobotID"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/RobotID"
+        android:gravity="right"
+
+        />
+    <TextView
+        android:id="@+id/RobotID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/RobotIDText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/RobotIDText"
+        android:gravity="left"
+        />
+
+
+    <TextView
+        android:id="@+id/StationText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Station"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Station"
+        app:layout_constraintTop_toBottomOf="@id/RobotIDText"
+        android:gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/Station"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/StationText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RobotIDText"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/ProductNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Product"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Station"
+        app:layout_constraintTop_toBottomOf="@id/StationText"
+        android:gravity="right"
+        />
+
+
+
+    <TextView
+        android:id="@+id/ProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="@id/ProductNameText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Station"
+         />
+
+    <TextView
+        android:id="@+id/ProducedText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="right"
+        android:text="@string/ProducedItems"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/RobotID"
+        app:layout_constraintTop_toBottomOf="@id/ProductNameText"
+        />
+
+
+    <TextView
+        android:id="@+id/ProducedItems"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="@id/ProducedText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ProductName"
+         />
+
+    <TextView
+        android:id="@+id/OutputText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="right"
+        android:text="@string/Output"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/RobotID"
+        app:layout_constraintTop_toBottomOf="@id/ProducedText" />
+
+    <TextView
+        android:id="@+id/OutputPallet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="@id/OutputText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ProducedItems"
+        />
+
+    <TextView
+        android:id="@+id/InputText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="right"
+        android:text="@string/Input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/RobotID"
+        app:layout_constraintTop_toBottomOf="@id/OutputText" />
+
+    <TextView
+        android:id="@+id/InputPallet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="left"
+        app:layout_constraintLeft_toRightOf="@id/InputText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OutputPallet"
+         />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/it_Settings"
+        android:title="@string/popup_settings"
+        android:tag="settings"/>
+
+    <item
+        android:id="@+id/it_LogOut"
+        android:title="@string/popup_logout"/>
+
+</menu>

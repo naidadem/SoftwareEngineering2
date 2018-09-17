@@ -1,0 +1,69 @@
+<resources>
+    <!-- Action bar titles -->
+    <string name="app_name">OpiFlex Industrial Monitoring</string>
+    <string name="settings">Settings</string>
+    <string name="robot">Robot information</string>
+    <string name="errorlog">Error log</string>
+    <string name="robot_list">Robot List</string>
+    <string name="notes">Error notes</string>
+
+    <!-- Toasts -->
+    <string name="errordetail_deleted">Note deleted</string>
+
+    <!-- Settings page strings -->
+    <string name="settings_general">General</string>
+    <string name="settings_information">Display information</string>
+
+    <string name="settings_getnotifications">Get push-notifications from this robot</string>
+    <string name="settings_startTime">Start time</string>
+    <string name="settings_endTime">End time</string>
+    <string name="settings_running">Status</string>
+    <string name="settings_cycleTime">Cycle time</string>
+    <string name="settings_station">Station</string>
+    <string name="settings_speed">Robot speed</string>
+
+    <string name="settings_selectAll">Toggle select all</string>
+    <string name="settings_save">Save settings</string>
+
+    <!-- Robot information page strings -->
+    <string name="robot_in">in</string>
+    <string name="robot_producing">Producing</string>
+    <string name="robot_timeleft">Estimated time remaining:</string>
+    <string name="robot_inputpallet">Input pallet:</string>
+    <string name="robot_outputpallet">Output pallet:</string>
+    <string name="robot_status">Status:</string>
+    <string name="robot_cycletime">Average cycle time:</string>
+    <string name="robot_speed">Current speed:</string>
+    <string name="robot_starttime">Task started at:</string>
+    <string name="robot_endtime">Task ending at:</string>
+    <string name="robot_station">Station:</string>
+
+    <string name="robot_progress">(%1$d/%2$d)</string>
+    <string name="robot_progresspercent">%1$d%%</string>
+    <string name="robot_inputValue">%1$d/%2$d</string>
+    <string name="robot_statusValueTrue">Running</string>
+    <string name="robot_statusValueFalse">Stopped</string>
+    <string name="robot_avgCycleValue">%1$d seconds</string>
+    <string name="robot_actionbar">Robot information: %1$s</string>
+
+    <!-- Login page strings -->
+    <string name="login_username">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_login">Login</string>
+
+    <!-- Popup menu strings -->
+    <string name="popup_settings">Settings</string>
+    <string name="popup_logout">Log out</string>
+
+    <!-- Robot list page strings -->
+    <string name="navbar_menu">Menu</string>
+    <string name="Robot_Button">Robot List</string>
+    <string name="Error_Logs">Error Logs</string>
+    <string name="RobotID">RobotID:</string>
+    <string name="Station">Station:</string>
+    <string name="Product">Product:</string>
+    <string name="ProducedItems">Items Produced:</string>
+    <string name="Output">Output Pallet:</string>
+    <string name="Input">InputPallet:</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+	</head>
+
+	<body>
+
+		<input id="file" type="file" />
+		<p>File must have the following format.</p>
+		<pre>
+{
+	"robotid": |string|,
+	"robotcellid": |string|,
+	"productname": |string|,
+	"starttime": |int|,
+	"currenttime": |int|,
+	"running": |bool|,
+	"produced": |int|,
+	"target": |int|,
+	"cycletime": |int|,
+	"station": |string|,
+	"error": |bool|,
+	"eventcode": |int|,
+	"inputpallet": |int|,
+	"outputpallet": |int|,
+	"speed": |int|,
+	"log": |string|
+}
+</pre>
+
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyD-uGu2HBSrH5GpbDLAwgE2gGbbqE9mmBU",
+				authDomain: "dva313-g5-2017.firebaseapp.com",
+				databaseURL: "https://dva313-g5-2017.firebaseio.com",
+				projectId: "dva313-g5-2017",
+				storageBucket: "dva313-g5-2017.appspot.com",
+				messagingSenderId: "237290388230"
+			};
+			firebase.initializeApp(config);
+			console.log(firebase);
+		</script>
+		<script>
+			(function(){
+
+				function onChange(event) {
+					var reader = new FileReader();
+					reader.onload = onReaderLoad;
+					reader.readAsText(event.target.files[0]);
+				}
+
+				function onReaderLoad(event){
+					console.log(event.target.result);
+					var obj = JSON.parse(event.target.result);
+					upload_data(obj.robotid, obj.robotcellid, obj.productname, obj.starttime,
+											obj.currenttime, obj.running, obj.produced, obj.target, obj.cycletime, 
+											obj.station, obj.error, obj.eventcode, obj.inputpallet, 
+											obj.outputpallet, obj.speed, obj.log);
+				}
+
+
+
+
+				function upload_data(robotid, robotcellid, productname, starttime, currenttime, 
+															running, produced, target, cycletime, station, error, 
+															eventcode, inputpallet, outputpallet, speed, log){
+					var database = firebase.database();
+					var ref = database.ref('Company/0/Robots');
+
+					var data = {
+						robotid: robotid, 
+						robotcellid: robotcellid,
+						productname: productname,
+						starttime: starttime,
+						currenttime: currenttime,							 
+						running: running,
+						produced: produced,
+						target: target,
+						cycletime: cycletime,
+						station: station,
+						error: error,
+						eventcode: eventcode,
+						inputpallet: inputpallet,
+						outputpallet: outputpallet,
+						speed: speed,
+						log: log
+					}
+					ref.push(data);  
+				}
+				document.getElementById('file').addEventListener('change', onChange);
+			}());
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

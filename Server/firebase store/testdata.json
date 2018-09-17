@@ -1,0 +1,18 @@
+{
+	"robotid": "robot500",
+	"robotcellid": "1232",
+	"productname": "keyboard",
+	"starttime": 1511539527 ,
+	"currenttime": 1511539561 ,
+	"running": true,
+	"produced": 5100,
+	"target": 7000,
+	"cycletime": 120,
+	"station": "Station 52",
+	"error": false,
+	"eventcode": 2,
+	"inputpallet": 10,
+	"outputpallet": 20,
+	"speed": 400,
+	"log": "Nothing to note here, just a test message"
+}
